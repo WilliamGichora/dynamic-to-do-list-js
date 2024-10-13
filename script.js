@@ -1,5 +1,3 @@
-
-// Event listener for DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
     // Select DOM elements
     const addButton = document.getElementById('add-task-btn');
@@ -14,9 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (taskText === "") {
             alert("Please enter a task.");
             return;
-        }
-
-        //  new list item
+        } else {
+              //  new list item
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
 
@@ -38,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Clear the task input field
         taskInput.value = "";
+        } 
     }
 
     // Event listener for Add Task button
