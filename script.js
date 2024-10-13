@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check if the task input is empty
         if (taskText === "") {
             alert("Please enter a task.");
-            return;
         } else {
-              //  new list item
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
 
